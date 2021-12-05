@@ -1,0 +1,21 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "Advent of code solutions",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbarbazz/advent-of-code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rbarbazz/advent-of-code/issues"
+  },
+  "homepage": "https://github.com/rbarbazz/advent-of-code#readme"
+}

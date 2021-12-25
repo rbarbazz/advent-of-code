@@ -1,9 +1,9 @@
-import { input } from './input'
+import { input as map } from './input'
 
 let totalRiskLevel = 0
 
 // Returns true if all adjacent points are higher
-const isLowestPoint = (map: number[][], x: number, y: number) => {
+const isLowestPoint = (x: number, y: number) => {
   const val = map[y][x]
   const up = y - 1 < 0 ? true : map[y - 1][x] > val
   const down = y + 1 === map.length ? true : map[y + 1][x] > val
@@ -17,9 +17,9 @@ const isLowestPoint = (map: number[][], x: number, y: number) => {
   return false
 }
 
-for (let y = 0; y < input.length; y++) {
-  for (let x = 0; x < input[y].length; x++) {
-    if (isLowestPoint(input, x, y)) totalRiskLevel += input[y][x] + 1
+for (let y = 0; y < map.length; y++) {
+  for (let x = 0; x < map[y].length; x++) {
+    if (isLowestPoint(x, y)) totalRiskLevel += map[y][x] + 1
   }
 }
 
